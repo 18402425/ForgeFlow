@@ -29,7 +29,7 @@ Current version: **v0.1.0**
 
 - [下载 ForgeFlow Local v0.1.0 / Download ForgeFlow Local v0.1.0](https://github.com/18402425/ForgeFlow/releases/download/v0.1.0/forgeflow-local-v0.1.0.zip)
 - [查看发布说明 / View release notes](https://github.com/18402425/ForgeFlow/releases/tag/v0.1.0)
-- [观看 10 秒介绍视频 / Watch the 10-second intro video](outputs/forgeflow-intro-video/renders/forgeflow-intro-10s-final.mp4)
+- [观看 30 秒介绍视频 / Watch the 30-second intro video](outputs/forgeflow-intro-video/renders/forgeflow-intro-30s-final.mp4)
 
 下载后解压，在本地启动即可使用；不需要云端账号。  
 After downloading, unzip the package and start it locally. No cloud account is required.
@@ -291,7 +291,7 @@ RELEASE_CHECKLIST.md
 server.js                                      local server and AI proxy
 outputs/forgeflow-p0b-decision-console.html   main local app
 outputs/forgeflow-release-test-dataset-*/      release validation dataset
-outputs/forgeflow-intro-video/renders/         10-second product intro video
+outputs/forgeflow-intro-video/renders/         30-second product intro video
 sample-data/                                  release package test data
 templates/                                    blank CSV templates
 examples/                                     minimal sample inputs
