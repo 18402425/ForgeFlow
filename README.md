@@ -22,6 +22,8 @@ ForgeFlow turns orders, SKU recipes, material inventory, printer capacity, and d
 > 规则做决策，AI 做解释，用户做确认。  
 > Rules decide. AI explains. The user confirms.
 
+![ForgeFlow 30-second intro preview](outputs/forgeflow-intro-video/renders/forgeflow-intro-30s-preview.gif)
+
 ## 下载 / Download
 
 当前版本：**v0.1.0**  
