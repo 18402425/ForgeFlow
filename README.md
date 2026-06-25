@@ -34,8 +34,26 @@ Current version: **v0.1.0**
 下载后解压，在本地启动即可使用；不需要云端账号。  
 After downloading, unzip the package and start it locally. No cloud account is required.
 
+ForgeFlow Local 是一个**本地网页工具**，不是安装到桌面的传统 App。启动文件会在你的电脑上运行本地服务，然后用浏览器打开 `127.0.0.1` 本机地址。  
+ForgeFlow Local is a **local web app**, not a traditional desktop app. The launcher starts a local service on your computer, then opens a `127.0.0.1` address in your browser.
+
+`127.0.0.1` 不是互联网网站，也不需要登录账号；它只代表你自己的电脑。  
+`127.0.0.1` is not an internet website and does not require login. It means your own computer.
+
 Mac 首次打开如果提示“Apple 无法验证”，请看压缩包里的 `START_HERE.md`，或按住 `Control` 点击启动文件并选择 **打开**。  
 If macOS blocks the launcher on first open, read `START_HERE.md`, or hold `Control`, click the launcher, and choose **Open**.
+
+下载包解压后的根目录会尽量保持简单：  
+The downloaded ZIP keeps the root folder simple:
+
+```text
+Start ForgeFlow.command  Mac 启动 / Mac launcher
+Start ForgeFlow.bat      Windows 启动 / Windows launcher
+START_HERE.md            使用说明 / instructions
+templates/               空白模板 / blank templates
+sample-data/             测试数据 / test data
+app/                     程序文件，平时不用打开 / program files, usually no need to open
+```
 
 ## 项目介绍 / Project Overview
 
@@ -93,7 +111,7 @@ Then it gives you an actionable daily decision:
 macOS:
 
 ```bash
-./start.command
+./Start\ ForgeFlow.command
 ```
 
 如果 macOS 提示“Apple 无法验证”，请先阅读 `START_HERE.md`。  
@@ -102,7 +120,7 @@ If macOS says Apple cannot verify the launcher, read `START_HERE.md` first.
 Windows:
 
 ```bat
-start.bat
+Start ForgeFlow.bat
 ```
 
 Terminal:
@@ -130,7 +148,7 @@ Open **数据配置** in the app, then choose one of two import actions:
 Sample release test files:
 
 ```text
-outputs/forgeflow-release-test-dataset-2026-06-25/
+sample-data/
 ```
 
 空白模板：  
@@ -199,7 +217,8 @@ DATA_MODEL.md
 Release validation dataset:
 
 ```text
-outputs/forgeflow-release-test-dataset-2026-06-25/
+sample-data/                         downloaded ZIP
+outputs/forgeflow-release-test-dataset-2026-06-25/   source repo
 ```
 
 ## 开发命令 / Developer Commands
@@ -273,6 +292,7 @@ server.js                                      local server and AI proxy
 outputs/forgeflow-p0b-decision-console.html   main local app
 outputs/forgeflow-release-test-dataset-*/      release validation dataset
 outputs/forgeflow-intro-video/renders/         10-second product intro video
+sample-data/                                  release package test data
 templates/                                    blank CSV templates
 examples/                                     minimal sample inputs
 scripts/smoke-test.js                         release smoke test

@@ -1,7 +1,18 @@
 # ForgeFlow Local Quickstart
 
-这份文档帮助你启动本地下载版。  
+这份文档帮助你启动本地下载版。ForgeFlow Local 是本地网页工具，不是安装到桌面的传统 App。  
 This guide gets the local downloadable version running.
+
+下载包解压后，普通用户只需要关心：
+
+```text
+Start ForgeFlow.command  Mac 启动
+Start ForgeFlow.bat      Windows 启动
+START_HERE.md            使用说明
+templates/               空白模板
+sample-data/             测试数据
+app/                     程序文件，平时不用打开
+```
 
 ## 1. Requirements
 
@@ -15,24 +26,24 @@ This guide gets the local downloadable version running.
 macOS:
 
 ```bash
-./start.command
+./Start\ ForgeFlow.command
 ```
 
 If macOS blocks the file with "Apple cannot verify", use one of these methods:
 
-- Hold `Control`, click `start.command`, then choose **Open**.
+- Hold `Control`, click `Start ForgeFlow.command`, then choose **Open**.
 - Or open **System Settings -> Privacy & Security** and choose **Open Anyway** for the blocked launcher.
 - Or run this inside the unzipped folder:
 
 ```bash
 xattr -dr com.apple.quarantine .
-./start.command
+./Start\ ForgeFlow.command
 ```
 
 Windows:
 
 ```bat
-start.bat
+Start ForgeFlow.bat
 ```
 
 Terminal:
@@ -54,7 +65,7 @@ Open **数据配置 -> 1 导入订单**.
 Use:
 
 ```text
-outputs/forgeflow-release-test-dataset-2026-06-25/orders_01_happy_path.csv
+sample-data/orders_01_happy_path.csv
 ```
 
 Then confirm:
