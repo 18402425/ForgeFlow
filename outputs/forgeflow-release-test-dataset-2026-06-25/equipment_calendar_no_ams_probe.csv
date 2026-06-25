@@ -1,0 +1,5 @@
+equipment_id,equipment_name,equipment_type,status,daily_available_hours,available_start,available_end,status_updated_at,has_ams,ams_slots
+PRN-A1-01,Bambu A1 01,FDM,available,8,2026-06-25 09:00:00,2026-06-25 17:00:00,2026-06-25 08:30:00,false,1
+PRN-A1-02,Bambu A1 02,FDM,available,8,2026-06-25 09:00:00,2026-06-25 17:00:00,2026-06-25 08:30:00,false,1
+PRN-P1S-01,Bambu P1S 01,FDM,available,8,2026-06-25 09:00:00,2026-06-25 17:00:00,2026-06-25 08:30:00,false,1
+PRN-P1S-AMS,Bambu P1S AMS,FDM,maintenance,0,2026-06-25 09:00:00,2026-06-25 17:00:00,2026-06-25 08:30:00,true,4

@@ -1,0 +1,48 @@
+{
+  "allowed_fact_sources": [
+    "raw_order_text",
+    "raw_order_rows",
+    "sku_library",
+    "material_inventory",
+    "finished_goods_inventory",
+    "equipment_calendar",
+    "deterministic_result",
+    "ai_draft_to_validate"
+  ],
+  "allowed_ai_generated_fields": [
+    "human_summary",
+    "human_explanation",
+    "reason",
+    "suggested_action",
+    "validation_notes"
+  ],
+  "allowed_fact_fields": [
+    "order_id",
+    "sku_id",
+    "sku_name",
+    "sku_spec",
+    "quantity",
+    "due_at",
+    "material_id",
+    "material_name",
+    "shortage_g",
+    "suggested_purchase_g",
+    "purchase_cost_estimate",
+    "ship_today_count",
+    "ship_today_delta",
+    "delay_risk_delta",
+    "risk_level",
+    "risk_type",
+    "risk_facts",
+    "reason_tags",
+    "expected_result",
+    "requires_user_confirm"
+  ],
+  "allowed_status_rules": {
+    "ready": "Input facts are sufficient and unambiguous for the requested auxiliary task.",
+    "needs_human_confirmation": "A field, SKU, inventory, equipment state, or rule result is missing, stale, conflicting, or low confidence.",
+    "validation_error": "Input data is invalid or an AI draft violates deterministic facts.",
+    "cannot_decide": "The requested conclusion requires a rule result that is not present."
+  },
+  "max_explanation_chars": 80
+}

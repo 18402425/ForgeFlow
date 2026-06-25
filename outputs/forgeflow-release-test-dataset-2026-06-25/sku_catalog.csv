@@ -1,0 +1,7 @@
+sku_id,sku_name,sku_spec,material_id,standard_print_hours,standard_material_g,recommended_equipment,post_process_minutes,package_minutes,revenue_estimate,profit_estimate,calibration_sample_count,material_details,requires_ams
+RX_WHITE_15,绒仙子白模桌面摆件,白色15cm,MAT_WHITE,4.0,120,PRN-A1-01|PRN-A1-02,0,0,48.88,20.00,5,MAT_WHITE:120:主材料,false
+JJ_BLACK_8,炫彩鸭吉吉手工涂装摆件,黑色8cm,MAT_BLACK,3.0,80,PRN-P1S-01|PRN-P1S-AMS,0,0,38.88,16.00,5,MAT_BLACK:80:主材料,false
+JJ_YELLOW_6,炫彩鸭吉吉手工涂装摆件,黄色6cm,MAT_YELLOW,2.0,50,PRN-P1S-01|PRN-P1S-AMS,0,0,28.88,11.00,5,MAT_YELLOW:50:主材料,false
+DH_HAT_10,大耳帽兜桌面摆件,10cm不含蛋,MAT_HAT_BASE,3.0,70,PRN-A1-01|PRN-A1-02,0,0,19.76,8.00,4,MAT_HAT_BASE:70:主材料,false
+SIGN_2C_12,双色门牌摆件,白底黑字12cm,MAT_WHITE,3.5,100,PRN-P1S-AMS,0,0,59.88,24.00,3,MAT_WHITE:60:主材料|MAT_BLACK:40:辅料,true
+DRAGON_3C_AMS,三色小龙摆件,红白黑三色,MAT_RED,5.0,120,PRN-P1S-AMS,0,0,88.88,36.00,3,MAT_RED:60:主材料|MAT_WHITE:40:辅料|MAT_BLACK:20:辅料,true

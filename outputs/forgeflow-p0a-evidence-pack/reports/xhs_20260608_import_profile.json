@@ -1,0 +1,28 @@
+{
+  "source_xlsx": "/Users/kellenwang/Downloads/小红书订单查询2026-06-08-15_11_383f4ff8.xlsx",
+  "snapshot_date": "2026-06-08",
+  "raw_order_count": 214,
+  "mapped_order_count": 214,
+  "pending_order_count": 7,
+  "mapping_coverage_pct": 100.0,
+  "status_counts": {
+    "待配货": 7,
+    "已完成": 163,
+    "已取消": 37,
+    "已发货未签收": 6,
+    "已签收": 1
+  },
+  "mapped_status_counts": {
+    "待配货": 7,
+    "已完成": 163,
+    "已取消": 37,
+    "已发货未签收": 6,
+    "已签收": 1
+  },
+  "top_unmapped_pairs": [],
+  "workbook_meta": {
+    "sheet_name": "包裹详情",
+    "row_count": 214,
+    "column_count": 75
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "source_xlsx": "/Users/kellenwang/Downloads/小红书订单查询2026-06-16-17_26_56506244.xlsx",
+  "snapshot_date": "2026-06-16",
+  "raw_order_count": 2,
+  "mapped_order_count": 2,
+  "pending_order_count": 2,
+  "mapping_coverage_pct": 100.0,
+  "status_counts": {
+    "待配货": 2
+  },
+  "mapped_status_counts": {
+    "待配货": 2
+  },
+  "top_unmapped_pairs": [],
+  "workbook_meta": {
+    "sheet_name": "包裹详情",
+    "row_count": 2,
+    "column_count": 75
+  }
+}

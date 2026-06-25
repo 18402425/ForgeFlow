@@ -1,0 +1,12 @@
+case_id,case_name,input_orders,materials,equipment,expected_cli_status,expected_hero,expected_pending,expected_orders,expected_primary_action,notes
+00,空订单池,orders_00_empty.csv,material_inventory.csv,equipment_calendar.csv,ui_only,还没有今天订单,无待处理,无今日生产清单,导入今天订单,用于前端空状态验收
+01,正常可排,orders_01_happy_path.csv,material_inventory.csv,equipment_calendar.csv,pass,今天先确认可发计划或今日可排,无核心待处理,展示今日生产清单,确认今日计划,基础链路
+02,临期优先,orders_02_due_priority.csv,material_inventory.csv,equipment_calendar.csv,pass,临期订单优先进入今日判断,无核心待处理,FF-R101 应排在靠前位置,确认今日计划,验证不是只按导入顺序
+03,缺料三天后到货,orders_03_material_shortage_leadtime.csv,material_inventory_shortage_leadtime.csv,equipment_calendar.csv,pass,今天先做库存够的订单;缺料订单等 6/28 到货后排,确认补货或等待到货,只排库存够的订单,确认补货并顺延,补货下单不等于今天可排
+04,多耗材 SKU,orders_04_multi_material.csv,material_inventory_shortage_leadtime.csv,equipment_calendar.csv,ui_expected,多耗材任一材料不足都应阻断,缺少对应耗材进入待处理,不应只看主 material_id,去确认或去配置,命令行旧规则只读主 material_id;前端配置层重点测
+05,AMS 多色打印,orders_05_ams_required.csv,material_inventory.csv,equipment_calendar_no_ams_probe.csv,ui_expected,需要 AMS 的订单不能排到无 AMS 设备,设备条件不足进入待处理,多色订单不硬排到普通 P1S,去配置,结合 has_ams 字段做前端验收
+06,设备不可用,orders_06_equipment_unavailable.csv,material_inventory.csv,equipment_calendar_unavailable_probe.csv,pass,A1 维修时只排 P1S 可承接订单,设备不可用订单进入待处理或风险,维修设备不参与今日生产,调整计划或去配置,验证设备状态
+07,产能压力,orders_07_capacity_pressure.csv,material_inventory.csv,equipment_calendar.csv,pass,今天只能排设备容量内订单,超出容量订单延后或风险,优先临期订单,确认今日计划,总工时超过 24h
+08,未知 SKU,orders_08_unknown_sku.csv,material_inventory.csv,equipment_calendar.csv,expected_validation_fail,还不能生成今日决策,SKU 未识别进入待处理,未知 SKU 不进入今日生产清单,去配置,validate_inputs 应失败
+09,脏库存,orders_09_dirty_inventory.csv,material_inventory_dirty_probe.csv,equipment_calendar.csv,expected_validation_fail,还不能生成今日决策,库存异常进入待处理,不输出可信排产,去配置,负库存应阻断
+10,网页粘贴导入,orders_10_web_paste_core.csv,material_inventory.csv,equipment_calendar.csv,ui_only,导入后自动刷新今日计划,无核心待处理,展示导入订单,追加或替换今天订单池,用于前端导入文本框

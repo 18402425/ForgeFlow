@@ -1,0 +1,450 @@
+{
+  "sample_meta": {
+    "label": "小红书待配货 7 单 · 2026-06-08",
+    "order_count": 7,
+    "decision_date": "2026-06-08",
+    "source_orders_file": "orders_xhs_20260608_pending_7.csv"
+  },
+  "deterministic_result": {
+    "decision_id": "DD-20260608-P0A",
+    "decision_version": 1,
+    "decision_date": "2026-06-08",
+    "generated_at": "2026-06-08T09:00:00+08:00",
+    "generated_by": "系统自动",
+    "input_snapshot_id": "SNAP-6067ce1aa01baded",
+    "changed_reason": "first_generate",
+    "precondition_status": "可生成",
+    "missing_data_actions": [],
+    "priority_orders": [
+      {
+        "task_id": "SYSTEM-001",
+        "order_id": "XHS0608-056",
+        "sku_id": "RX_WHITE_15",
+        "equipment_id": "PRN-A1-01",
+        "planned_start": "2026-06-08T09:00:00+08:00",
+        "planned_end": "2026-06-08T13:34:00+08:00",
+        "status": "待生产",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": true,
+        "can_ship_today": true,
+        "reason_tags": [
+          "due_today",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [
+          "below_safety_line_after_task"
+        ],
+        "score_breakdown": {
+          "due_score": 95,
+          "readiness_score": 90,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 84.5
+        },
+        "material_after_task_g": 7
+      },
+      {
+        "task_id": "SYSTEM-002",
+        "order_id": "XHS0608-067",
+        "sku_id": "JJ_BLACK_8",
+        "equipment_id": "PRN-P1S-01",
+        "planned_start": "2026-06-08T09:00:00+08:00",
+        "planned_end": "2026-06-08T12:40:00+08:00",
+        "status": "待生产",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": true,
+        "can_ship_today": true,
+        "reason_tags": [
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [
+          "below_safety_line_after_task"
+        ],
+        "score_breakdown": {
+          "due_score": 35,
+          "readiness_score": 100,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 64
+        },
+        "material_after_task_g": 35
+      }
+    ],
+    "material_shortages": [
+      {
+        "material_id": "MAT_WHITE",
+        "material_name": "绒仙子白模通用耗材",
+        "shortage_g": 247,
+        "affected_order_ids": [
+          "XHS0608-027",
+          "XHS0608-045",
+          "XHS0608-001",
+          "XHS0608-081",
+          "XHS0608-046"
+        ]
+      }
+    ],
+    "purchase_suggestions": [
+      {
+        "material_id": "MAT_WHITE",
+        "material_name": "绒仙子白模通用耗材",
+        "shortage_g": 247,
+        "roll_spec_g": 1000,
+        "suggested_purchase_unit": 1,
+        "suggested_purchase_g": 1000,
+        "purchase_cost_estimate": 80,
+        "covered_order_ids": [
+          "XHS0608-027",
+          "XHS0608-045",
+          "XHS0608-001",
+          "XHS0608-081",
+          "XHS0608-046"
+        ],
+        "can_affect_ship_today": true,
+        "arrival_assumption": "当天到货",
+        "affected_order_count": 5,
+        "ship_today_delta": 5,
+        "delay_risk_delta": 0,
+        "estimated_margin_impact": null,
+        "confidence_delta": "补齐后缺料阻断减少，计划可信度提升"
+      }
+    ],
+    "ship_today_count": 2,
+    "ship_today_order_ids": [
+      "XHS0608-056",
+      "XHS0608-067"
+    ],
+    "risk_orders": [
+      {
+        "order_id": "XHS0608-027",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 78g 绒仙子白模通用耗材，当前剩余 7g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "XHS0608-045",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 42g 绒仙子白模通用耗材，当前剩余 7g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "XHS0608-001",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 78g 绒仙子白模通用耗材，当前剩余 7g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "XHS0608-081",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 42g 绒仙子白模通用耗材，当前剩余 7g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "XHS0608-046",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 42g 绒仙子白模通用耗材，当前剩余 7g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      }
+    ],
+    "optimization_actions": [
+      {
+        "action_id": "delivery_first",
+        "strategy": "交付优先",
+        "expected_result": "比人工计划 少或不增加延期风险；准时可发 2 单",
+        "benefit": "优先处理交期近且物料设备满足的订单",
+        "tradeoff": "部分非临期订单会被后置",
+        "available": true
+      },
+      {
+        "action_id": "material_min",
+        "strategy": "缺料最少",
+        "expected_result": "当前缺料阻断 5 单，先做不缺料订单",
+        "benefit": "减少等料停工",
+        "tradeoff": "缺料订单需要采购或顺延",
+        "available": true
+      },
+      {
+        "action_id": "capacity_fit",
+        "strategy": "产能可执行优先",
+        "expected_result": "当前设备容量阻断 0 单，先识别今日排不下的订单",
+        "benefit": "避免把超出当天设备时长的订单误判为准时可发",
+        "tradeoff": "需要加机时、换机或主动顺延",
+        "available": true
+      }
+    ],
+    "data_quality_flags": [
+      {
+        "flag": "source_excel_pii_removed",
+        "level": "info",
+        "message": "订单样本已移除姓名、电话、地址等 PII。"
+      },
+      {
+        "flag": "manual_sequence_proxy",
+        "level": "warning",
+        "message": "人工计划序列使用历史发货时间倒推候选生产开始时间，再按资源约束回放；需在真实试点中替换为人工记录。"
+      }
+    ],
+    "plan_score": -110,
+    "score_summary": {
+      "manual_plan_score": -230,
+      "system_plan_score": -110,
+      "score_delta": 120,
+      "manual_metrics": {
+        "plan_score": -230,
+        "delayed_order_count": 1,
+        "material_blocked_order_count": 5,
+        "equipment_blocked_order_count": 0,
+        "missing_data_order_count": 0
+      },
+      "system_metrics": {
+        "plan_score": -110,
+        "delayed_order_count": 0,
+        "material_blocked_order_count": 5,
+        "equipment_blocked_order_count": 0,
+        "missing_data_order_count": 0
+      },
+      "reason_tag_coverage_pct": 100
+    }
+  },
+  "input_snapshot": {
+    "input_snapshot_id": "SNAP-6067ce1aa01baded",
+    "decision_id": "DD-20260608-P0A",
+    "order_snapshot_hash": "df236abde74419e2",
+    "sku_snapshot_hash": "ff044d4336de8bb2",
+    "material_snapshot_hash": "99701f34e4bbaef4",
+    "equipment_snapshot_hash": "5d5d41cd65957776",
+    "created_at": "2026-06-08T09:00:00+08:00"
+  },
+  "backtest": {
+    "order_count": 7,
+    "manual_sequence_method": "manual_actual_ship_at - sku_process_hours, then resource-constrained replay",
+    "manual_sequence_order_ids": [
+      "XHS0608-001",
+      "XHS0608-027",
+      "XHS0608-045",
+      "XHS0608-046",
+      "XHS0608-056",
+      "XHS0608-067",
+      "XHS0608-081"
+    ],
+    "manual_sequence_details": [
+      {
+        "rank": 1,
+        "order_id": "XHS0608-001",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      },
+      {
+        "rank": 2,
+        "order_id": "XHS0608-027",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      },
+      {
+        "rank": 3,
+        "order_id": "XHS0608-045",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      },
+      {
+        "rank": 4,
+        "order_id": "XHS0608-046",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      },
+      {
+        "rank": 5,
+        "order_id": "XHS0608-056",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      },
+      {
+        "rank": 6,
+        "order_id": "XHS0608-067",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      },
+      {
+        "rank": 7,
+        "order_id": "XHS0608-081",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": ""
+      }
+    ],
+    "system_sequence_order_ids": [
+      "XHS0608-056",
+      "XHS0608-027",
+      "XHS0608-067",
+      "XHS0608-045",
+      "XHS0608-001",
+      "XHS0608-081",
+      "XHS0608-046"
+    ],
+    "manual_plan_score": -230,
+    "system_plan_score": -110,
+    "score_delta": 120,
+    "reason_tag_coverage_pct": 100,
+    "differences": [
+      {
+        "order_id": "XHS0608-056",
+        "manual_rank": 5,
+        "system_rank": 1,
+        "rank_delta": 4,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "due_today",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      },
+      {
+        "order_id": "XHS0608-027, XHS0608-045, XHS0608-001, XHS0608-081, XHS0608-046",
+        "manual_rank": null,
+        "system_rank": null,
+        "rank_delta": null,
+        "difference_type": "material_constraint",
+        "reason_tags": [
+          "material_shortage"
+        ],
+        "explanation": "系统在回放过程中发现同一耗材被前序任务消耗后，后续订单进入缺料阻断。"
+      },
+      {
+        "order_id": "XHS0608-001",
+        "manual_rank": 1,
+        "system_rank": 5,
+        "rank_delta": -4,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "overdue",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available",
+          "delay_risk"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      }
+    ],
+    "full_rank_comparison": [
+      {
+        "manual_rank": 1,
+        "system_rank": 5,
+        "rank_delta": -4,
+        "rank_change": "后置 4 位",
+        "order_id": "XHS0608-001",
+        "difference_type": "系统后置",
+        "due_at": "2026-06-05T18:07:26+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 2,
+        "system_rank": 2,
+        "rank_delta": 0,
+        "rank_change": "不变",
+        "order_id": "XHS0608-027",
+        "difference_type": "排序不变",
+        "due_at": "2026-06-08T20:20:31+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "系统排序和人工基线排序一致。"
+      },
+      {
+        "manual_rank": 3,
+        "system_rank": 4,
+        "rank_delta": -1,
+        "rank_change": "后置 1 位",
+        "order_id": "XHS0608-045",
+        "difference_type": "系统后置",
+        "due_at": "2026-06-15T11:12:54+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 4,
+        "system_rank": 7,
+        "rank_delta": -3,
+        "rank_change": "后置 3 位",
+        "order_id": "XHS0608-046",
+        "difference_type": "系统后置",
+        "due_at": "2026-06-06T11:08:16+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 5,
+        "system_rank": 1,
+        "rank_delta": 4,
+        "rank_change": "提前 4 位",
+        "order_id": "XHS0608-056",
+        "difference_type": "交期前置",
+        "due_at": "2026-06-08T17:09:49+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 6,
+        "system_rank": 3,
+        "rank_delta": 3,
+        "rank_change": "提前 3 位",
+        "order_id": "XHS0608-067",
+        "difference_type": "系统提前",
+        "due_at": "2026-06-14T14:25:08+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "系统按交期、物料和设备可执行性把它提前。"
+      },
+      {
+        "manual_rank": 7,
+        "system_rank": 6,
+        "rank_delta": 1,
+        "rank_change": "提前 1 位",
+        "order_id": "XHS0608-081",
+        "difference_type": "交期前置",
+        "due_at": "2026-06-05T22:35:52+08:00",
+        "manual_actual_ship_at": "",
+        "manual_inferred_start_at": "",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      }
+    ],
+    "failed_case_list": [],
+    "acceptance": {
+      "outputs_today_plan_json": true,
+      "outputs_backtest_report_md": true,
+      "no_ai_dependency": true,
+      "reason_tag_coverage_pass": true,
+      "differences_explainable": true
+    }
+  }
+}

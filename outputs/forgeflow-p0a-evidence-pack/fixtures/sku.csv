@@ -1,0 +1,12 @@
+sku_id,sku_name,sku_spec,material_id,standard_print_hours,standard_material_g,recommended_equipment,post_process_minutes,package_minutes,revenue_estimate,profit_estimate,calibration_sample_count
+DH_HAT_15_EGG,炫彩大耳帽兜桌面摆件,15cm高（包含蛋）,MAT_HAT_BASE,4.0,70,PRN-A1-01,25,10,18.88,8.00,2
+DH_HAT_15_NO_EGG,炫彩大耳帽兜桌面摆件,15cm高（不包含蛋）,MAT_HAT_BASE,3.5,60,PRN-A1-01,20,10,15.88,6.50,2
+DH_HAT_10_EGG,炫彩大耳帽兜桌面摆件,10cm（包含蛋）,MAT_HAT_BASE,2.8,45,PRN-A1-01,15,8,18.88,8.00,2
+DH_HAT_10_NO_EGG,炫彩大耳帽兜桌面摆件,10cm（不包含蛋）,MAT_HAT_BASE,2.4,40,PRN-A1-01,15,8,19.76,8.00,2
+JJ_BLUE_8,炫彩鸭吉吉手工涂装创意摆件,鸭蓝蓝，8cm x 8cm x 10cm,MAT_BLUE,3.0,65,PRN-P1S-01,30,10,38.88,16.00,4
+JJ_PINK_8,炫彩鸭吉吉手工涂装创意摆件,粉色炫彩，8cm x 8cm x 10cm,MAT_PINK,3.0,65,PRN-P1S-01,30,10,38.88,16.00,4
+JJ_BLACK_8,炫彩鸭吉吉手工涂装创意摆件,黑色炫彩，8cm x 8cm x 10cm,MAT_BLACK,3.0,65,PRN-P1S-01,30,10,38.88,16.00,4
+JJ_YELLOW_6,炫彩鸭吉吉手工涂装创意摆件,黄色原皮，6cm x 6cm x 8cm,MAT_YELLOW,2.2,45,PRN-P1S-01,25,8,28.88,11.00,4
+JJ_BLACK_12,炫彩鸭吉吉手工涂装创意摆件,黑色炫彩，12cm x 12cm x 15cm,MAT_BLACK,5.5,130,PRN-P1S-01,40,12,58.88,23.00,4
+JJ_GREEN_12,炫彩鸭吉吉手工涂装创意摆件,绿色炫彩，12cm x 12cm x 15cm,MAT_GREEN,5.5,130,PRN-P1S-01,40,12,58.88,23.00,3
+JJ_GREEN_8,炫彩鸭吉吉手工涂装创意摆件,绿色炫彩，8cm x 8cm x 10cm,MAT_GREEN,3.0,65,PRN-P1S-01,30,10,42.76,17.00,3

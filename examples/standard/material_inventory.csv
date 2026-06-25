@@ -1,0 +1,7 @@
+material_id,material_name,roll_spec_g,full_roll_count,opened_remaining_g,available_g,safety_line_g,last_updated_at,min_purchase_unit,same_day_arrival_available,unit_price
+MAT_HAT_BASE,帽兜摆件通用耗材,1000,0,360,360,120,2026-05-07 08:10:00,1000,false,0.08
+MAT_BLUE,鸭吉吉蓝色耗材,1000,0,80,80,80,2026-05-07 08:10:00,1000,true,0.09
+MAT_PINK,鸭吉吉粉色耗材,1000,0,120,120,80,2026-05-07 08:10:00,1000,true,0.09
+MAT_BLACK,鸭吉吉黑色耗材,1000,0,100,100,120,2026-05-07 08:10:00,1000,true,0.09
+MAT_YELLOW,鸭吉吉黄色耗材,1000,0,80,80,80,2026-05-07 08:10:00,1000,true,0.09
+MAT_GREEN,鸭吉吉绿色耗材,1000,0,220,220,80,2026-05-07 08:10:00,1000,true,0.09

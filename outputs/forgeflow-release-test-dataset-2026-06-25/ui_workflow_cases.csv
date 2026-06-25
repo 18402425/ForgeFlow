@@ -1,0 +1,9 @@
+workflow_id,workflow_name,start_case,steps,expected_result
+UI-01,空状态导入引导,orders_00_empty.csv,打开页面;确认首屏按钮;点击导入今天订单,首屏显示还没有今天订单;按钮打开数据配置并定位到导入订单
+UI-02,确认补货待到货,orders_03_material_shortage_leadtime.csv,导入缺料订单;点击确认补货并顺延;刷新页面,首屏变成已记录补货;按钮变成确认到货入库;待处理显示等待到货
+UI-03,确认到货入库,orders_03_material_shortage_leadtime.csv,在已补货状态点击确认到货入库;填写实际到货克重;确认,库存入库;受影响订单恢复可排;待处理减少
+UI-04,调整计划移出再加回,orders_01_happy_path.csv,打开调整计划;移出第一单;刷新;点击加回今日,移出状态刷新后不丢;加回后回到今日生产清单
+UI-05,调整计划上移下移,orders_02_due_priority.csv,打开调整计划;对第二单执行上移;刷新页面,订单顺序保持调整后的状态
+UI-06,追加今天订单池,orders_10_web_paste_core.csv,先导入一批订单;再次粘贴同一批选择追加,重复订单不重复追加;系统自动刷新今日计划
+UI-07,替换今天订单池,orders_10_web_paste_core.csv,先导入并手动移出一单;再选择替换今天订单池,旧订单和旧调整状态被清空;只保留新订单池
+UI-08,未知 SKU 配置入口,orders_08_unknown_sku.csv,导入未知 SKU;查看待处理;进入数据配置,待处理提示 SKU 未识别;不会静默排产

@@ -1,0 +1,18 @@
+{
+  "name": "forgeflow-local",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local-first production decision console for small 3D printing studios.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "demo": "python3 scripts/run_demo.py",
+    "smoke": "node scripts/smoke-test.js",
+    "test": "npm run smoke",
+    "release:build": "node scripts/build-release.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}

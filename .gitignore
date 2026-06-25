@@ -1,0 +1,25 @@
+.DS_Store
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+*.zip
+*.sqlite
+*.sqlite-*
+*.db
+node_modules/
+dist/
+
+# Generated local runs.
+outputs/demo/
+outputs/demo-validate-only/
+outputs/demo-xhs-plan/
+outputs/demo-xhs-import-check/
+outputs/imported/
+outputs/*state*.json
+outputs/*state*.sqlite
+outputs/forgeflow-server-*.log
+outputs/forgeflow-release-test-dataset-2026-06-25/run-*/
+outputs/forgeflow-release-test-dataset-2026-06-25/validation-*/

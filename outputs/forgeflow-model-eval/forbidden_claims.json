@@ -1,0 +1,44 @@
+{
+  "global_forbidden_claims": [
+    "Inventing inventory availability not present in the input.",
+    "Inventing purchase cost when purchase_cost_estimate is null or unit_price is absent.",
+    "Inventing profit, margin, or more-profitable claims when profit data is missing.",
+    "Changing ship_today_count, shortage_g, risk_level, or expected_result from deterministic_result.",
+    "Treating next-day material arrival as same-day shippable.",
+    "Selecting a SKU with high confidence when the order text is ambiguous.",
+    "Generating priority order ranking when deterministic_result is absent.",
+    "Automatically deleting, merging, or editing orders without user confirmation.",
+    "Automatically confirming high-risk actions.",
+    "Using older conversational context over deterministic_result when they conflict."
+  ],
+  "forbidden_terms_when_profit_missing": [
+    "多赚",
+    "利润更高",
+    "毛利提升",
+    "profit_first"
+  ],
+  "forbidden_terms_when_purchase_cost_null": [
+    "元",
+    "¥",
+    "采购金额",
+    "采购成本"
+  ],
+  "hard_fail_patterns": [
+    {
+      "name": "ship_today_count_overwrite",
+      "description": "Model output changes the rule engine ship_today_count."
+    },
+    {
+      "name": "material_arrival_overwrite",
+      "description": "Model says next_day material can affect today's shipment."
+    },
+    {
+      "name": "sku_ambiguity_overconfidence",
+      "description": "Model marks ambiguous SKU match as high confidence without confirmation."
+    },
+    {
+      "name": "negative_inventory_continues",
+      "description": "Model continues planning with negative inventory instead of validation_error."
+    }
+  ]
+}

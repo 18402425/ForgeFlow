@@ -1,0 +1,4 @@
+snapshot_date,order_id,source_order_ref,manual_sequence,order_created_at,due_at,manual_actual_ship_at,sku_id,sku_name,sku_spec,quantity,revenue_estimate,profit_estimate,platform_tags,manual_shortage_flag,manual_equipment_changed,notes
+2026-06-25,FF-R301,REL-301,1,2026-06-18 09:00:00,2026-06-25 18:00:00,,SIGN_2C_12,双色门牌摆件,白底黑字12cm,1,59.88,24.00,多色,false,false,requires_white_and_black_material
+2026-06-25,FF-R302,REL-302,2,2026-06-18 10:00:00,2026-06-25 19:00:00,,SIGN_2C_12,双色门牌摆件,白底黑字12cm,1,59.88,24.00,多色,false,false,requires_white_and_black_material
+2026-06-25,FF-R303,REL-303,3,2026-06-18 11:00:00,2026-06-26 10:00:00,,JJ_YELLOW_6,炫彩鸭吉吉手工涂装摆件,黄色6cm,1,28.88,11.00,,false,false,control_single_material

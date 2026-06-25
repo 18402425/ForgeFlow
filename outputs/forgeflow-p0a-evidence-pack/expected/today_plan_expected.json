@@ -1,0 +1,1041 @@
+{
+  "deterministic_result": {
+    "decision_id": "DD-20260507-P0A",
+    "decision_version": 1,
+    "decision_date": "2026-05-07",
+    "generated_at": "2026-05-07T09:00:00+08:00",
+    "generated_by": "系统自动",
+    "input_snapshot_id": "SNAP-b5daeedbe1f93b44",
+    "changed_reason": "first_generate",
+    "precondition_status": "可生成",
+    "missing_data_actions": [],
+    "priority_orders": [
+      {
+        "task_id": "SYSTEM-001",
+        "order_id": "ORD-014",
+        "sku_id": "JJ_BLACK_8",
+        "equipment_id": "PRN-P1S-01",
+        "planned_start": "2026-05-07T09:00:00+08:00",
+        "planned_end": "2026-05-07T12:40:00+08:00",
+        "status": "异常",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": false,
+        "can_ship_today": false,
+        "reason_tags": [
+          "due_today",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [
+          "estimated_finish_after_due",
+          "below_safety_line_after_task"
+        ],
+        "score_breakdown": {
+          "due_score": 95,
+          "readiness_score": 100,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 88
+        },
+        "material_after_task_g": 35
+      },
+      {
+        "task_id": "SYSTEM-002",
+        "order_id": "ORD-015B",
+        "sku_id": "JJ_YELLOW_6",
+        "equipment_id": "PRN-P1S-01",
+        "planned_start": "2026-05-07T12:40:00+08:00",
+        "planned_end": "2026-05-07T15:25:00+08:00",
+        "status": "异常",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": false,
+        "can_ship_today": false,
+        "reason_tags": [
+          "due_today",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [
+          "estimated_finish_after_due",
+          "below_safety_line_after_task"
+        ],
+        "score_breakdown": {
+          "due_score": 95,
+          "readiness_score": 100,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 88
+        },
+        "material_after_task_g": 35
+      },
+      {
+        "task_id": "SYSTEM-003",
+        "order_id": "ORD-013",
+        "sku_id": "DH_HAT_10_EGG",
+        "equipment_id": "PRN-A1-01",
+        "planned_start": "2026-05-07T09:00:00+08:00",
+        "planned_end": "2026-05-07T12:11:00+08:00",
+        "status": "异常",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": false,
+        "can_ship_today": false,
+        "reason_tags": [
+          "due_today",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [
+          "estimated_finish_after_due"
+        ],
+        "score_breakdown": {
+          "due_score": 95,
+          "readiness_score": 90,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 84.5
+        },
+        "material_after_task_g": 315
+      },
+      {
+        "task_id": "SYSTEM-004",
+        "order_id": "ORD-017",
+        "sku_id": "DH_HAT_10_NO_EGG",
+        "equipment_id": "PRN-A1-01",
+        "planned_start": "2026-05-07T12:11:00+08:00",
+        "planned_end": "2026-05-07T14:58:00+08:00",
+        "status": "待生产",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": true,
+        "can_ship_today": true,
+        "reason_tags": [
+          "due_today",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [],
+        "score_breakdown": {
+          "due_score": 95,
+          "readiness_score": 90,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 84.5
+        },
+        "material_after_task_g": 275
+      },
+      {
+        "task_id": "SYSTEM-005",
+        "order_id": "ORD-018",
+        "sku_id": "DH_HAT_10_NO_EGG",
+        "equipment_id": "PRN-A1-01",
+        "planned_start": "2026-05-07T14:58:00+08:00",
+        "planned_end": "2026-05-07T17:45:00+08:00",
+        "status": "待生产",
+        "locked": false,
+        "can_finish_today": true,
+        "can_ship_on_time": true,
+        "can_ship_today": true,
+        "reason_tags": [
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "risk_flags": [],
+        "score_breakdown": {
+          "due_score": 35,
+          "readiness_score": 90,
+          "material_penalty": 0,
+          "equipment_score": 100,
+          "delay_penalty": 0,
+          "finished_goods_score": 0,
+          "data_missing_penalty": 0,
+          "priority_score": 60.5
+        },
+        "material_after_task_g": 235
+      }
+    ],
+    "material_shortages": [
+      {
+        "material_id": "MAT_BLACK",
+        "material_name": "鸭吉吉黑色耗材",
+        "shortage_g": 315,
+        "affected_order_ids": [
+          "ORD-015A",
+          "ORD-009B",
+          "ORD-016",
+          "ORD-006"
+        ]
+      }
+    ],
+    "purchase_suggestions": [
+      {
+        "material_id": "MAT_BLACK",
+        "material_name": "鸭吉吉黑色耗材",
+        "shortage_g": 315,
+        "roll_spec_g": 1000,
+        "suggested_purchase_unit": 1,
+        "suggested_purchase_g": 1000,
+        "purchase_cost_estimate": 90,
+        "covered_order_ids": [
+          "ORD-015A",
+          "ORD-009B",
+          "ORD-016",
+          "ORD-006"
+        ],
+        "can_affect_ship_today": true,
+        "arrival_assumption": "当天到货",
+        "affected_order_count": 4,
+        "ship_today_delta": 4,
+        "delay_risk_delta": 0,
+        "estimated_margin_impact": null,
+        "confidence_delta": "补齐后缺料阻断减少，计划可信度提升"
+      }
+    ],
+    "ship_today_count": 2,
+    "ship_today_order_ids": [
+      "ORD-017",
+      "ORD-018"
+    ],
+    "risk_orders": [
+      {
+        "order_id": "ORD-014",
+        "risk_level": "high",
+        "risk_type": "delay_risk",
+        "facts": [
+          "预计完成 2026-05-07T12:40:00+08:00 晚于承诺发货 2026-05-07T10:49:50+08:00"
+        ],
+        "suggested_action": "优先处理或与客户协商顺延"
+      },
+      {
+        "order_id": "ORD-015A",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 65g 鸭吉吉黑色耗材，当前剩余 35g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "ORD-015B",
+        "risk_level": "high",
+        "risk_type": "delay_risk",
+        "facts": [
+          "预计完成 2026-05-07T15:25:00+08:00 晚于承诺发货 2026-05-07T11:24:04+08:00"
+        ],
+        "suggested_action": "优先处理或与客户协商顺延"
+      },
+      {
+        "order_id": "ORD-009A",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu P1S 一号机 今日可用到 2026-05-07T19:00:00+08:00，预计完成 2026-05-07T19:05:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-013",
+        "risk_level": "high",
+        "risk_type": "delay_risk",
+        "facts": [
+          "预计完成 2026-05-07T12:11:00+08:00 晚于承诺发货 2026-05-07T10:48:32+08:00"
+        ],
+        "suggested_action": "优先处理或与客户协商顺延"
+      },
+      {
+        "order_id": "ORD-012",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu P1S 一号机 今日可用到 2026-05-07T19:00:00+08:00，预计完成 2026-05-07T19:05:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-005",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu A1 一号机 今日可用到 2026-05-07T21:00:00+08:00，预计完成 2026-05-07T22:20:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-002",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu P1S 一号机 今日可用到 2026-05-07T19:00:00+08:00，预计完成 2026-05-07T19:05:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-011",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu P1S 一号机 今日可用到 2026-05-07T19:00:00+08:00，预计完成 2026-05-07T21:47:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-007",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu P1S 一号机 今日可用到 2026-05-07T19:00:00+08:00，预计完成 2026-05-07T19:05:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-001",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu A1 一号机 今日可用到 2026-05-07T21:00:00+08:00，预计完成 2026-05-07T22:20:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-003",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu A1 一号机 今日可用到 2026-05-07T21:00:00+08:00，预计完成 2026-05-07T22:20:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-004",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu A1 一号机 今日可用到 2026-05-07T21:00:00+08:00，预计完成 2026-05-07T21:45:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-010",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu A1 一号机 今日可用到 2026-05-07T21:00:00+08:00，预计完成 2026-05-07T21:45:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-008",
+        "risk_level": "medium",
+        "risk_type": "capacity_exceeded",
+        "facts": [
+          "Bambu A1 一号机 今日可用到 2026-05-07T21:00:00+08:00，预计完成 2026-05-07T22:20:00+08:00"
+        ],
+        "suggested_action": "顺延或增加设备时长"
+      },
+      {
+        "order_id": "ORD-009B",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 130g 鸭吉吉黑色耗材，当前剩余 35g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "ORD-016",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 130g 鸭吉吉黑色耗材，当前剩余 35g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      },
+      {
+        "order_id": "ORD-006",
+        "risk_level": "high",
+        "risk_type": "material_shortage",
+        "facts": [
+          "需要 130g 鸭吉吉黑色耗材，当前剩余 35g"
+        ],
+        "suggested_action": "处理缺料或顺延订单"
+      }
+    ],
+    "optimization_actions": [
+      {
+        "action_id": "delivery_first",
+        "strategy": "交付优先",
+        "expected_result": "比人工计划 少或不增加延期风险；准时可发 2 单",
+        "benefit": "优先处理交期近且物料设备满足的订单",
+        "tradeoff": "部分非临期订单会被后置",
+        "available": true
+      },
+      {
+        "action_id": "material_min",
+        "strategy": "缺料最少",
+        "expected_result": "当前缺料阻断 4 单，先做不缺料订单",
+        "benefit": "减少等料停工",
+        "tradeoff": "缺料订单需要采购或顺延",
+        "available": true
+      },
+      {
+        "action_id": "capacity_fit",
+        "strategy": "产能可执行优先",
+        "expected_result": "当前设备容量阻断 11 单，先识别今日排不下的订单",
+        "benefit": "避免把超出当天设备时长的订单误判为准时可发",
+        "tradeoff": "需要加机时、换机或主动顺延",
+        "available": true
+      },
+      {
+        "action_id": "profit_review",
+        "strategy": "利润复盘",
+        "expected_result": "利润字段完整，可用于复盘高利润订单是否被过度后置；P0a 主排序仍以交付、缺料、产能为主",
+        "benefit": "帮助业务负责人判断系统排序是否牺牲了重要订单",
+        "tradeoff": "只作为复盘视角，不直接改变本次 P0a 排序",
+        "available": true
+      }
+    ],
+    "data_quality_flags": [
+      {
+        "flag": "source_excel_pii_removed",
+        "level": "info",
+        "message": "订单样本已移除姓名、电话、地址等 PII。"
+      },
+      {
+        "flag": "manual_sequence_proxy",
+        "level": "warning",
+        "message": "人工计划序列使用历史发货时间倒推候选生产开始时间，再按资源约束回放；需在真实试点中替换为人工记录。"
+      }
+    ],
+    "plan_score": -490,
+    "score_summary": {
+      "manual_plan_score": -730,
+      "system_plan_score": -490,
+      "score_delta": 240,
+      "manual_metrics": {
+        "plan_score": -730,
+        "delayed_order_count": 5,
+        "material_blocked_order_count": 4,
+        "equipment_blocked_order_count": 11,
+        "missing_data_order_count": 0
+      },
+      "system_metrics": {
+        "plan_score": -490,
+        "delayed_order_count": 3,
+        "material_blocked_order_count": 4,
+        "equipment_blocked_order_count": 11,
+        "missing_data_order_count": 0
+      },
+      "reason_tag_coverage_pct": 100
+    }
+  },
+  "input_snapshot": {
+    "input_snapshot_id": "SNAP-b5daeedbe1f93b44",
+    "decision_id": "DD-20260507-P0A",
+    "order_snapshot_hash": "8068a1793f438829",
+    "sku_snapshot_hash": "fe45aadc0d1e54c7",
+    "material_snapshot_hash": "a4598920d15d51e6",
+    "equipment_snapshot_hash": "db9c647786c375db",
+    "created_at": "2026-05-07T09:00:00+08:00"
+  },
+  "backtest": {
+    "order_count": 20,
+    "manual_sequence_method": "manual_actual_ship_at - sku_process_hours, then resource-constrained replay",
+    "manual_sequence_order_ids": [
+      "ORD-001",
+      "ORD-003",
+      "ORD-002",
+      "ORD-004",
+      "ORD-005",
+      "ORD-006",
+      "ORD-008",
+      "ORD-007",
+      "ORD-009B",
+      "ORD-010",
+      "ORD-009A",
+      "ORD-011",
+      "ORD-016",
+      "ORD-012",
+      "ORD-014",
+      "ORD-015A",
+      "ORD-013",
+      "ORD-015B",
+      "ORD-017",
+      "ORD-018"
+    ],
+    "manual_sequence_details": [
+      {
+        "rank": 1,
+        "order_id": "ORD-001",
+        "manual_actual_ship_at": "2026-05-04T13:34:41+08:00",
+        "manual_inferred_start_at": "2026-05-04T08:59:41+08:00"
+      },
+      {
+        "rank": 2,
+        "order_id": "ORD-003",
+        "manual_actual_ship_at": "2026-05-04T23:56:44+08:00",
+        "manual_inferred_start_at": "2026-05-04T19:21:44+08:00"
+      },
+      {
+        "rank": 3,
+        "order_id": "ORD-002",
+        "manual_actual_ship_at": "2026-05-04T23:27:43+08:00",
+        "manual_inferred_start_at": "2026-05-04T19:47:43+08:00"
+      },
+      {
+        "rank": 4,
+        "order_id": "ORD-004",
+        "manual_actual_ship_at": "2026-05-04T23:58:39+08:00",
+        "manual_inferred_start_at": "2026-05-04T19:58:39+08:00"
+      },
+      {
+        "rank": 5,
+        "order_id": "ORD-005",
+        "manual_actual_ship_at": "2026-05-05T02:11:50+08:00",
+        "manual_inferred_start_at": "2026-05-04T21:36:50+08:00"
+      },
+      {
+        "rank": 6,
+        "order_id": "ORD-006",
+        "manual_actual_ship_at": "2026-05-05T16:23:01+08:00",
+        "manual_inferred_start_at": "2026-05-05T10:01:01+08:00"
+      },
+      {
+        "rank": 7,
+        "order_id": "ORD-008",
+        "manual_actual_ship_at": "2026-05-06T02:31:19+08:00",
+        "manual_inferred_start_at": "2026-05-05T21:56:19+08:00"
+      },
+      {
+        "rank": 8,
+        "order_id": "ORD-007",
+        "manual_actual_ship_at": "2026-05-06T02:11:24+08:00",
+        "manual_inferred_start_at": "2026-05-05T22:31:24+08:00"
+      },
+      {
+        "rank": 9,
+        "order_id": "ORD-009B",
+        "manual_actual_ship_at": "2026-05-06T06:56:59+08:00",
+        "manual_inferred_start_at": "2026-05-06T00:34:59+08:00"
+      },
+      {
+        "rank": 10,
+        "order_id": "ORD-010",
+        "manual_actual_ship_at": "2026-05-06T06:57:31+08:00",
+        "manual_inferred_start_at": "2026-05-06T02:57:31+08:00"
+      },
+      {
+        "rank": 11,
+        "order_id": "ORD-009A",
+        "manual_actual_ship_at": "2026-05-06T06:56:59+08:00",
+        "manual_inferred_start_at": "2026-05-06T03:16:59+08:00"
+      },
+      {
+        "rank": 12,
+        "order_id": "ORD-011",
+        "manual_actual_ship_at": "2026-05-06T14:47:44+08:00",
+        "manual_inferred_start_at": "2026-05-06T08:25:44+08:00"
+      },
+      {
+        "rank": 13,
+        "order_id": "ORD-016",
+        "manual_actual_ship_at": "2026-05-07T09:18:29+08:00",
+        "manual_inferred_start_at": "2026-05-07T02:56:29+08:00"
+      },
+      {
+        "rank": 14,
+        "order_id": "ORD-012",
+        "manual_actual_ship_at": "2026-05-07T09:07:22+08:00",
+        "manual_inferred_start_at": "2026-05-07T05:27:22+08:00"
+      },
+      {
+        "rank": 15,
+        "order_id": "ORD-014",
+        "manual_actual_ship_at": "2026-05-07T09:15:45+08:00",
+        "manual_inferred_start_at": "2026-05-07T05:35:45+08:00"
+      },
+      {
+        "rank": 16,
+        "order_id": "ORD-015A",
+        "manual_actual_ship_at": "2026-05-07T09:17:02+08:00",
+        "manual_inferred_start_at": "2026-05-07T05:37:02+08:00"
+      },
+      {
+        "rank": 17,
+        "order_id": "ORD-013",
+        "manual_actual_ship_at": "2026-05-07T09:15:45+08:00",
+        "manual_inferred_start_at": "2026-05-07T06:04:45+08:00"
+      },
+      {
+        "rank": 18,
+        "order_id": "ORD-015B",
+        "manual_actual_ship_at": "2026-05-07T09:17:02+08:00",
+        "manual_inferred_start_at": "2026-05-07T06:32:02+08:00"
+      },
+      {
+        "rank": 19,
+        "order_id": "ORD-017",
+        "manual_actual_ship_at": "2026-05-07T11:04:43+08:00",
+        "manual_inferred_start_at": "2026-05-07T08:17:43+08:00"
+      },
+      {
+        "rank": 20,
+        "order_id": "ORD-018",
+        "manual_actual_ship_at": "2026-05-08T14:41:20+08:00",
+        "manual_inferred_start_at": "2026-05-08T11:54:20+08:00"
+      }
+    ],
+    "system_sequence_order_ids": [
+      "ORD-014",
+      "ORD-015A",
+      "ORD-015B",
+      "ORD-009A",
+      "ORD-013",
+      "ORD-017",
+      "ORD-012",
+      "ORD-018",
+      "ORD-005",
+      "ORD-002",
+      "ORD-011",
+      "ORD-007",
+      "ORD-001",
+      "ORD-003",
+      "ORD-004",
+      "ORD-010",
+      "ORD-008",
+      "ORD-009B",
+      "ORD-016",
+      "ORD-006"
+    ],
+    "manual_plan_score": -730,
+    "system_plan_score": -490,
+    "score_delta": 240,
+    "reason_tag_coverage_pct": 100,
+    "differences": [
+      {
+        "order_id": "ORD-014",
+        "manual_rank": 15,
+        "system_rank": 1,
+        "rank_delta": 14,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "due_today",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      },
+      {
+        "order_id": "ORD-009A",
+        "manual_rank": 11,
+        "system_rank": 4,
+        "rank_delta": 7,
+        "difference_type": "urgent_tag",
+        "reason_tags": [
+          "due_soon",
+          "material_available",
+          "printer_slot_available",
+          "customer_urgent"
+        ],
+        "explanation": "系统识别平台催发货标签，但仍受物料和设备约束。"
+      },
+      {
+        "order_id": "ORD-012",
+        "manual_rank": 14,
+        "system_rank": 7,
+        "rank_delta": 7,
+        "difference_type": "delivery_reorder",
+        "reason_tags": [
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统按交期、设备和物料可执行性重新排序。"
+      },
+      {
+        "order_id": "ORD-009B",
+        "manual_rank": 9,
+        "system_rank": 18,
+        "rank_delta": -9,
+        "difference_type": "material_constraint",
+        "reason_tags": [
+          "due_soon",
+          "material_shortage_core",
+          "printer_slot_available",
+          "customer_urgent"
+        ],
+        "explanation": "系统发现当前耗材不足，不把它放进今日优先生产。"
+      },
+      {
+        "order_id": "MULTIPLE",
+        "manual_rank": null,
+        "system_rank": null,
+        "rank_delta": null,
+        "difference_type": "equipment_capacity",
+        "reason_tags": [
+          "capacity_exceeded"
+        ],
+        "explanation": "系统在同一台设备日可用时长内回放任务，超出当日容量的订单不计入准时可发。"
+      },
+      {
+        "order_id": "ORD-015A",
+        "manual_rank": 16,
+        "system_rank": 2,
+        "rank_delta": 14,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "due_today",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      },
+      {
+        "order_id": "ORD-015B",
+        "manual_rank": 18,
+        "system_rank": 3,
+        "rank_delta": 15,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "due_today",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      },
+      {
+        "order_id": "ORD-013",
+        "manual_rank": 17,
+        "system_rank": 5,
+        "rank_delta": 12,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "due_today",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      },
+      {
+        "order_id": "ORD-017",
+        "manual_rank": 19,
+        "system_rank": 6,
+        "rank_delta": 13,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "due_today",
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      },
+      {
+        "order_id": "ORD-018",
+        "manual_rank": 20,
+        "system_rank": 8,
+        "rank_delta": 12,
+        "difference_type": "delivery_reorder",
+        "reason_tags": [
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统按交期、设备和物料可执行性重新排序。"
+      },
+      {
+        "order_id": "ORD-005",
+        "manual_rank": 5,
+        "system_rank": 9,
+        "rank_delta": -4,
+        "difference_type": "delivery_reorder",
+        "reason_tags": [
+          "sku_low_sample",
+          "material_available",
+          "printer_slot_available"
+        ],
+        "explanation": "系统按交期、设备和物料可执行性重新排序。"
+      },
+      {
+        "order_id": "ORD-002",
+        "manual_rank": 3,
+        "system_rank": 10,
+        "rank_delta": -7,
+        "difference_type": "due_date_priority",
+        "reason_tags": [
+          "overdue",
+          "material_available",
+          "printer_slot_available",
+          "delay_risk"
+        ],
+        "explanation": "系统把交期更近或已逾期的订单前置。"
+      }
+    ],
+    "full_rank_comparison": [
+      {
+        "manual_rank": 1,
+        "system_rank": 13,
+        "rank_delta": -12,
+        "rank_change": "后置 12 位",
+        "order_id": "ORD-001",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-04T19:07:38+08:00",
+        "manual_actual_ship_at": "2026-05-04T13:34:41+08:00",
+        "manual_inferred_start_at": "2026-05-04T08:59:41+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 2,
+        "system_rank": 14,
+        "rank_delta": -12,
+        "rank_change": "后置 12 位",
+        "order_id": "ORD-003",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-06T10:50:58+08:00",
+        "manual_actual_ship_at": "2026-05-04T23:56:44+08:00",
+        "manual_inferred_start_at": "2026-05-04T19:21:44+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 3,
+        "system_rank": 10,
+        "rank_delta": -7,
+        "rank_change": "后置 7 位",
+        "order_id": "ORD-002",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-05T08:26:18+08:00",
+        "manual_actual_ship_at": "2026-05-04T23:27:43+08:00",
+        "manual_inferred_start_at": "2026-05-04T19:47:43+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 4,
+        "system_rank": 15,
+        "rank_delta": -11,
+        "rank_change": "后置 11 位",
+        "order_id": "ORD-004",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-06T11:20:20+08:00",
+        "manual_actual_ship_at": "2026-05-04T23:58:39+08:00",
+        "manual_inferred_start_at": "2026-05-04T19:58:39+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 5,
+        "system_rank": 9,
+        "rank_delta": -4,
+        "rank_change": "后置 4 位",
+        "order_id": "ORD-005",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-14T23:59:59+08:00",
+        "manual_actual_ship_at": "2026-05-05T02:11:50+08:00",
+        "manual_inferred_start_at": "2026-05-04T21:36:50+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 6,
+        "system_rank": 20,
+        "rank_delta": -14,
+        "rank_change": "后置 14 位",
+        "order_id": "ORD-006",
+        "difference_type": "缺料后置",
+        "due_at": "2026-05-05T23:59:59+08:00",
+        "manual_actual_ship_at": "2026-05-05T16:23:01+08:00",
+        "manual_inferred_start_at": "2026-05-05T10:01:01+08:00",
+        "reason": "当前核心耗材不足，系统把它后置，不强行放进优先生产。"
+      },
+      {
+        "manual_rank": 7,
+        "system_rank": 17,
+        "rank_delta": -10,
+        "rank_change": "后置 10 位",
+        "order_id": "ORD-008",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-06T17:36:20+08:00",
+        "manual_actual_ship_at": "2026-05-06T02:31:19+08:00",
+        "manual_inferred_start_at": "2026-05-05T21:56:19+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 8,
+        "system_rank": 12,
+        "rank_delta": -4,
+        "rank_change": "后置 4 位",
+        "order_id": "ORD-007",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-06T19:22:42+08:00",
+        "manual_actual_ship_at": "2026-05-06T02:11:24+08:00",
+        "manual_inferred_start_at": "2026-05-05T22:31:24+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 9,
+        "system_rank": 18,
+        "rank_delta": -9,
+        "rank_change": "后置 9 位",
+        "order_id": "ORD-009B",
+        "difference_type": "缺料后置",
+        "due_at": "2026-05-07T23:59:59+08:00",
+        "manual_actual_ship_at": "2026-05-06T06:56:59+08:00",
+        "manual_inferred_start_at": "2026-05-06T00:34:59+08:00",
+        "reason": "当前核心耗材不足，系统把它后置，不强行放进优先生产。"
+      },
+      {
+        "manual_rank": 10,
+        "system_rank": 16,
+        "rank_delta": -6,
+        "rank_change": "后置 6 位",
+        "order_id": "ORD-010",
+        "difference_type": "系统后置",
+        "due_at": "2026-05-06T16:19:20+08:00",
+        "manual_actual_ship_at": "2026-05-06T06:57:31+08:00",
+        "manual_inferred_start_at": "2026-05-06T02:57:31+08:00",
+        "reason": "系统判断这单相对不紧急，或受物料、设备、交期约束影响，被后置。"
+      },
+      {
+        "manual_rank": 11,
+        "system_rank": 4,
+        "rank_delta": 7,
+        "rank_change": "提前 7 位",
+        "order_id": "ORD-009A",
+        "difference_type": "催发前置",
+        "due_at": "2026-05-07T23:59:59+08:00",
+        "manual_actual_ship_at": "2026-05-06T06:56:59+08:00",
+        "manual_inferred_start_at": "2026-05-06T03:16:59+08:00",
+        "reason": "平台有催发货标签，系统提高关注度，但仍受物料和设备约束。"
+      },
+      {
+        "manual_rank": 12,
+        "system_rank": 11,
+        "rank_delta": 1,
+        "rank_change": "提前 1 位",
+        "order_id": "ORD-011",
+        "difference_type": "交期前置",
+        "due_at": "2026-05-06T17:33:03+08:00",
+        "manual_actual_ship_at": "2026-05-06T14:47:44+08:00",
+        "manual_inferred_start_at": "2026-05-06T08:25:44+08:00",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 13,
+        "system_rank": 19,
+        "rank_delta": -6,
+        "rank_change": "后置 6 位",
+        "order_id": "ORD-016",
+        "difference_type": "缺料后置",
+        "due_at": "2026-05-08T00:53:35+08:00",
+        "manual_actual_ship_at": "2026-05-07T09:18:29+08:00",
+        "manual_inferred_start_at": "2026-05-07T02:56:29+08:00",
+        "reason": "当前核心耗材不足，系统把它后置，不强行放进优先生产。"
+      },
+      {
+        "manual_rank": 14,
+        "system_rank": 7,
+        "rank_delta": 7,
+        "rank_change": "提前 7 位",
+        "order_id": "ORD-012",
+        "difference_type": "系统提前",
+        "due_at": "2026-05-12T22:17:03+08:00",
+        "manual_actual_ship_at": "2026-05-07T09:07:22+08:00",
+        "manual_inferred_start_at": "2026-05-07T05:27:22+08:00",
+        "reason": "系统按交期、物料和设备可执行性把它提前。"
+      },
+      {
+        "manual_rank": 15,
+        "system_rank": 1,
+        "rank_delta": 14,
+        "rank_change": "提前 14 位",
+        "order_id": "ORD-014",
+        "difference_type": "交期前置",
+        "due_at": "2026-05-07T10:49:50+08:00",
+        "manual_actual_ship_at": "2026-05-07T09:15:45+08:00",
+        "manual_inferred_start_at": "2026-05-07T05:35:45+08:00",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 16,
+        "system_rank": 2,
+        "rank_delta": 14,
+        "rank_change": "提前 14 位",
+        "order_id": "ORD-015A",
+        "difference_type": "交期前置",
+        "due_at": "2026-05-07T11:24:04+08:00",
+        "manual_actual_ship_at": "2026-05-07T09:17:02+08:00",
+        "manual_inferred_start_at": "2026-05-07T05:37:02+08:00",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 17,
+        "system_rank": 5,
+        "rank_delta": 12,
+        "rank_change": "提前 12 位",
+        "order_id": "ORD-013",
+        "difference_type": "交期前置",
+        "due_at": "2026-05-07T10:48:32+08:00",
+        "manual_actual_ship_at": "2026-05-07T09:15:45+08:00",
+        "manual_inferred_start_at": "2026-05-07T06:04:45+08:00",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 18,
+        "system_rank": 3,
+        "rank_delta": 15,
+        "rank_change": "提前 15 位",
+        "order_id": "ORD-015B",
+        "difference_type": "交期前置",
+        "due_at": "2026-05-07T11:24:04+08:00",
+        "manual_actual_ship_at": "2026-05-07T09:17:02+08:00",
+        "manual_inferred_start_at": "2026-05-07T06:32:02+08:00",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 19,
+        "system_rank": 6,
+        "rank_delta": 13,
+        "rank_change": "提前 13 位",
+        "order_id": "ORD-017",
+        "difference_type": "交期前置",
+        "due_at": "2026-05-07T17:21:13+08:00",
+        "manual_actual_ship_at": "2026-05-07T11:04:43+08:00",
+        "manual_inferred_start_at": "2026-05-07T08:17:43+08:00",
+        "reason": "交期更近或已逾期，系统把它提前处理。"
+      },
+      {
+        "manual_rank": 20,
+        "system_rank": 8,
+        "rank_delta": 12,
+        "rank_change": "提前 12 位",
+        "order_id": "ORD-018",
+        "difference_type": "系统提前",
+        "due_at": "2026-05-14T07:56:04+08:00",
+        "manual_actual_ship_at": "2026-05-08T14:41:20+08:00",
+        "manual_inferred_start_at": "2026-05-08T11:54:20+08:00",
+        "reason": "系统按交期、物料和设备可执行性把它提前。"
+      }
+    ],
+    "failed_case_list": [],
+    "acceptance": {
+      "outputs_today_plan_json": true,
+      "outputs_backtest_report_md": true,
+      "no_ai_dependency": true,
+      "reason_tag_coverage_pass": true,
+      "differences_explainable": true
+    }
+  }
+}

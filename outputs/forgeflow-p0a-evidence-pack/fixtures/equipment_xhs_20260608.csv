@@ -1,0 +1,4 @@
+equipment_id,equipment_name,equipment_type,status,daily_available_hours,available_start,available_end,status_updated_at
+PRN-A1-01,Bambu A1 一号机,FDM,available,12,2026-06-08 09:00:00,2026-06-08 21:00:00,2026-06-08 08:40:00
+PRN-A1-02,Bambu A1 二号机,FDM,available,12,2026-06-08 09:00:00,2026-06-08 21:00:00,2026-06-08 08:40:00
+PRN-P1S-01,Bambu P1S 一号机,FDM,available,10,2026-06-08 09:00:00,2026-06-08 19:00:00,2026-06-08 08:40:00

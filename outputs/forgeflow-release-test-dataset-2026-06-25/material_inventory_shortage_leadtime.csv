@@ -1,0 +1,6 @@
+material_id,material_name,roll_spec_g,full_roll_count,opened_remaining_g,available_g,safety_line_g,last_updated_at,min_purchase_unit,same_day_arrival_available,unit_price,replenish_lead_days,next_restock_date
+MAT_WHITE,白色 PLA 通用耗材,1000,0,240,240,150,2026-06-25 08:30:00,1000,false,0.08,3,2026-06-28
+MAT_BLACK,黑色 PLA 通用耗材,1000,1,400,1400,150,2026-06-25 08:30:00,1000,false,0.09,2,2026-06-27
+MAT_YELLOW,黄色 PLA 通用耗材,1000,1,200,1200,100,2026-06-25 08:30:00,1000,true,0.09,0,2026-06-25
+MAT_HAT_BASE,帽兜米白 PLA 耗材,1000,1,100,1100,150,2026-06-25 08:30:00,1000,false,0.08,4,2026-06-29
+MAT_RED,红色 PLA 耗材,1000,1,100,1100,100,2026-06-25 08:30:00,1000,false,0.10,3,2026-06-28

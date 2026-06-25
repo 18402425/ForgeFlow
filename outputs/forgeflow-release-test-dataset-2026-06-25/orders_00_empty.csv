@@ -1,0 +1,1 @@
+snapshot_date,order_id,source_order_ref,manual_sequence,order_created_at,due_at,manual_actual_ship_at,sku_id,sku_name,sku_spec,quantity,revenue_estimate,profit_estimate,platform_tags,manual_shortage_flag,manual_equipment_changed,notes
