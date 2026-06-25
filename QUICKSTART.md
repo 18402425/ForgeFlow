@@ -1,5 +1,6 @@
 # ForgeFlow Local Quickstart
 
+这份文档帮助你启动本地下载版。  
 This guide gets the local downloadable version running.
 
 ## 1. Requirements
@@ -14,6 +15,17 @@ This guide gets the local downloadable version running.
 macOS:
 
 ```bash
+./start.command
+```
+
+If macOS blocks the file with "Apple cannot verify", use one of these methods:
+
+- Hold `Control`, click `start.command`, then choose **Open**.
+- Or open **System Settings -> Privacy & Security** and choose **Open Anyway** for the blocked launcher.
+- Or run this inside the unzipped folder:
+
+```bash
+xattr -dr com.apple.quarantine .
 ./start.command
 ```
 

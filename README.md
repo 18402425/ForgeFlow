@@ -34,6 +34,9 @@ Current version: **v0.1.0**
 下载后解压，在本地启动即可使用；不需要云端账号。  
 After downloading, unzip the package and start it locally. No cloud account is required.
 
+Mac 首次打开如果提示“Apple 无法验证”，请看压缩包里的 `START_HERE.md`，或按住 `Control` 点击启动文件并选择 **打开**。  
+If macOS blocks the launcher on first open, read `START_HERE.md`, or hold `Control`, click the launcher, and choose **Open**.
+
 ## 项目介绍 / Project Overview
 
 很多小型 3D 打印店的真实工作流并不是完整 ERP，而是：  
@@ -92,6 +95,9 @@ macOS:
 ```bash
 ./start.command
 ```
+
+如果 macOS 提示“Apple 无法验证”，请先阅读 `START_HERE.md`。  
+If macOS says Apple cannot verify the launcher, read `START_HERE.md` first.
 
 Windows:
 

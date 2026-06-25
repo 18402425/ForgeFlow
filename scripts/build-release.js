@@ -16,6 +16,13 @@ function copyFile(relativePath) {
   fs.copyFileSync(source, target);
 }
 
+function copyFileAs(sourceRelativePath, targetRelativePath) {
+  const source = path.join(ROOT, sourceRelativePath);
+  const target = path.join(releaseDir, targetRelativePath);
+  fs.mkdirSync(path.dirname(target), { recursive: true });
+  fs.copyFileSync(source, target);
+}
+
 function copyDir(relativePath, filter = () => true) {
   const source = path.join(ROOT, relativePath);
   const target = path.join(releaseDir, relativePath);
@@ -39,6 +46,7 @@ fs.mkdirSync(releaseDir, { recursive: true });
   "package.json",
   "server.js",
   "README.md",
+  "START_HERE.md",
   "QUICKSTART.md",
   "DATA_MODEL.md",
   "PRIVACY.md",
@@ -49,6 +57,9 @@ fs.mkdirSync(releaseDir, { recursive: true });
   "start.bat",
   "run-backtest.js"
 ].forEach(copyFile);
+
+copyFileAs("start.command", "Start ForgeFlow.command");
+copyFileAs("start.bat", "Start ForgeFlow.bat");
 
 copyDir("templates");
 copyDir("examples");
@@ -77,6 +88,7 @@ copyDir("outputs/forgeflow-p0a-evidence-pack", (rel) => {
 
 try {
   fs.chmodSync(path.join(releaseDir, "start.command"), 0o755);
+  fs.chmodSync(path.join(releaseDir, "Start ForgeFlow.command"), 0o755);
   fs.chmodSync(path.join(releaseDir, "scripts", "smoke-test.js"), 0o755);
 } catch (error) {
   // chmod is best-effort on non-POSIX systems.
